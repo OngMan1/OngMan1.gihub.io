@@ -1,0 +1,121 @@
+<!--
+    RMIT University Vietnam
+    Course: COSC2430 Web Programming 
+    Swmester: 2023A
+    Assessment: Assignment 1
+    Author: Ong Gia Man
+    ID: 3938231
+    Acknowledgement:
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+    <link rel="icon" type="" href="">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!--Header section-->
+    <header>
+        <!--Navigation-->
+        <div class="nav-bar-1">
+            <a class="logo"><img src="" alt=""></a>
+        <ul class="nav1-category">
+            <li><a href="">Home</a></li>
+            <li><a href="">Non-fiction</a></li>
+            <li><a href="">Fiction</a></li>
+            <li><a href="">Textbook</a></li>
+            <li><a href="">Children</a></li>
+            <li><a href="">Contemporary Drama</a></li>
+            <li><a href="">Reference</a></li>
+        </ul>
+        <ul class="user-tools">
+            <li><i class="fa-solid fa-magnifying-glass"></i></li>
+            <li><i class="fa-solid fa-bag-shopping"></i></li>
+        </ul>
+        </div>
+    </header>
+
+    <main>
+        <h1>Contact Us</h1>
+        <div class="form-container">
+            <form action="contact-form" method="POST" enctype="multipart/form-data">
+                <div class="form-group">
+                    <label for="contact-purpose">Choose contact purpose</label>
+                    <select id="contact-purpose"  name="contact-purpose" required>
+                        <option value="" style="color:gray" disabled>--Please select your purpose--</option>
+                        <option value="sell">I want to sell books</option>
+                        <option value="buy">I want to buy books</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="name">Name: </label>
+                    <input type="text" id="name" name="name" placeholder="e.g James Smith" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email: </label>
+                    <input type="email" id="email" name="email" placeholder="e.g 1234@gmail.com" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone: </label>
+                    <input type="tel" id="phone" name="tel" required>
+                </div>
+                <div class="form-group">
+                    <label>Contact Preference: </label>
+                    <label for="by-email">By Email</label>
+                    <input type="checkbox" id="by-email" name="contact-preference" required>
+                    <label for="by-phone">By Phone</label>
+                    <input type="checkbox" id="by-phone" name="contact-preference">
+                </div>
+                <div class="form-group">
+                    <label>Receive weekly newsletter? </label>
+                    <label for="yes">Yes</label>
+                    <input type="radio" id="yes" name="newsletter?" checked>
+                    <label for="no">No</label>
+                    <input type="radio" id="no" name="newsletter?">
+                </div>
+                <div class="form-group">
+                    <label for="extra-note">Extra Notes</label>
+                    <input type="textarea" id="extra-note" name="note">
+                </div>
+            </form>
+            <div class="image"></div>
+        </div>
+    </main>
+
+    <!--Footer section-->
+    <footer class="footer">
+        <nav>    
+            <div class="nav-bar-2">
+                <div class="about-us">
+                    <p class="header">About Us</p>
+                    <p class="content">Our goal is to create a 
+                        community of book lovers and promote the joy of 
+                        reading. We strive to offer excellent customer service 
+                        and a seamless online shopping experience. Thank you for 
+                        supporting our bookstore.</p>
+                </div>
+                <div class="contact-us">
+                    <p class="header"><a href="">Contact Us</a></p>
+                    <div class="social-media-icon">
+                        <p>Follow us on &#58;</p>
+                        <ul class="social icon">
+                        <li><a><i class="fa-brands fa-square-facebook" style="color: black"></i></i></a></li>
+                        <li><i class="fa-brands fa-square-instagram"></i></li>
+                        <li><i class="fa-brands fa-square-twitter"></i></li>
+                    </ul>
+                    </div>
+                </div>
+                <p class="header"><a href="">Privacy Policy</a></p>
+                <p class="header"><a href="">Terms</a></p>
+                <p class="header"><a href="">Copyright</a></p>
+            </div>
+        </nav>
+    </footer>
+</body>
+</html>
