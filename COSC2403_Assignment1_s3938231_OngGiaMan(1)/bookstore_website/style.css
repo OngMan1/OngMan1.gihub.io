@@ -20,6 +20,7 @@
     --pale-yellow-green: #F0F2B6;
     --yellowish-white: #FCF8E8;
     --rose-light-pink: #CF918D;
+    --sage-black: #141810;
 }
 
 html {
@@ -30,9 +31,12 @@ html {
     margin: 0;
     padding:0;
     box-sizing: border-box;
-    line-height: 1.2;
 }
 
+body a {
+    cursor: pointer;
+    text-decoration: none;;
+}
 body {
     background-color: var(--yellowish-white);
     margin: 0;
@@ -176,29 +180,108 @@ main .quotes .line {
     margin: 16px auto;
   }
   
-/*Category*/
+/*CATEGORY*/
 main .category {
-    border: solid black 2px;
-    margin: 56px 0px;
+    margin: 80px 0px;
 }
 
 main .category .product{
-    border: solid black 2px;
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 80px 0px;
 }
 
 main .category .cards {
-    border: solid black 2px;
+    width: 230px;
+    height: 400px;
+    /* border: solid black 1px; */
 }
 
 main .category .cate-name {
     text-align: center;
-    margin: 16px;
-    border: solid red;
+    margin: 56px;
+}
+
+main .category .cate-name a{
+    font-size: 42.63px;
+    font-weight: bolder;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    color: var(--sage-black)
 }
 
 main .category .cate-container {
-    border: solid blue;
-    margin-bottom: 56px;;
+    margin: 112px 0px;
+    position: relative
+}
+
+main .category .cards a > img {
+    width: 228px;
+    height: 240px;
+}
+
+main .category .slide-arrow {
+    width: 8px;
+    height: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 80px;
+    box-sizing: border-box;
+    margin: 16px;
+    padding: 80px 32px;
+    background-color: transparent;
+    border: transparent;
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+main .category .slide-arrow:hover {
+    opacity: 1;
+}
+
+main .category .cards .book-name {
+    font-weight: 1000;
+    overflow: hidden;
+    height: 50px;
+    margin: 8px 8px;
+    text-transform: capitalize;
+}
+
+main .category .cards .author {
+    font-size: 18px;
+    font-style:italic;
+    width: 212.667px;
+    height: 20px;
+    margin: 8px 8px;
+    overflow: hidden;
+}
+
+main .category .book-price {
+    font-size: 35px;
+    font-weight: 900;
+    margin: 9px 8px;
+    text-align: center;
+}
+
+main .sub-cate-title {
+    text-align: center;
+    margin: 144px;
+    font-size: 56.83px;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    font-weight: bolder;
+}
+
+main .hor-line-container {
+    height: 1px;
+    display: flex;
+    justify-content: center;
+} 
+
+main .hor-line {
+    width: 136px;
+    background-color: var(--sage-black);
 }
