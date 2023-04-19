@@ -46,12 +46,19 @@ body {
 }
 
 /* Style Header*/
+
+
+.logo img {
+    width: 50px;
+    margin-top: 5px;
+}
 .nav-bar-1 {
     background-color: var(--forest-green);
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    align-items: baseline;
+    padding: 8px;
+    
 }
 
 .nav1-category li{
@@ -69,7 +76,8 @@ body {
 header .user-tools {
     display: flex;
     flex-direction: row;
-    gap: 48px
+    gap: 48px;
+    margin: 16px;
 }
 
 header .user-tools li{
@@ -86,57 +94,110 @@ header .user-tools li i{
 
 /*Footer*/
 
-.footer {
+footer {
     background-color: var(--forest-green);
-}
-
-.footer nav {
-    margin: 0 48px;
-    box-sizing: border-box;
-    border: solid black 2px;
-}
-
-footer .nav-bar-2 {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin-top: 16px;
-}
-
-footer .nav-bar-2 >* {
-    width: 150px;
-}
-
-
-footer .about-us {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    row-gap: 40px;
-}
-
-footer .nav-bar-2 a {
-    text-decoration: none;
-    color: var(--light-sage);
+    color: var(--light-sage)
 }
   
-
-footer .header {
-    color: var(--light-sage);
-}
-
-footer .contact-us {
+  .footer-nav {
     display: flex;
-    flex-direction: column;
+    justify-content: space-around;
     flex-wrap: wrap;
-    row-gap: 24px;
+    padding: 40px 40px;
+    
+  }
+  
+  .category-nav ul,
+  .links-nav ul,
+  .social-nav ul {
+    list-style: none;
+    margin: 40px 0px;
+    padding: 0;
+    font-size: 22.5px;
+  }
+  
+  .category-nav ul li,
+  .links-nav ul li,
+  .social-nav ul li {
+    margin: 16px 0;
+    font-size: 18px;
+  }
+  
+  .category-nav ul li a,
+  .links-nav ul li a,
+  .social-nav ul li a {
+    color: var(--pale-yellow-green);
+    text-decoration: none;
+    font-size: 14px;
+  }
+  
+  .category-nav h3,
+  .links-nav h3,
+  .social-nav h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+
+  .category-nav h3 a,
+  .links-nav h3 a,
+  .social-nav h3 a {
+    text-decoration: none;
+    cursor: pointer;
+    color: var(--light-sage)
+  }
+
+  .social-nav ul li {
+    display: inline-block;
+  }
+  
+  .social-nav ul li a i {
+    font-size: 24px;
+    margin-right: 10px;
+  }
+
+  .footer-contact {text-align: center;}
+
+  .footer-nav .footer-contact img{
+    width: 150px;
+    display: inline-block;
+  }
+  
+  .footer-nav p{
+    margin: 8px;
+  }
+
+  .footer-nav p > a{
+    text-decoration: none;
+    color: var(--pale-yellow-green)
+  }
+
+.footer-linebreak {
+    background-color: var(--light-sage);
+    height: 1px;
 }
 
-footer .social-media-icon ul li {
-    display: inline-block;
-    margin-right: 10px;
+.copyright {
+    text-align: center;
+    padding: 32px;
 }
+
+  @media (max-width: 767px) {
+    .footer-nav {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    .category-nav,
+    .links-nav,
+    .social-nav {
+      margin-bottom: 20px;
+    }
+    .category-nav ul li,
+    .links-nav ul li,
+    .social-nav ul li {
+      margin: 5px 10px;
+    }
+  }
+  
 
 /*HOMEPAGE*/ 
 /*Hero Area*/
@@ -246,7 +307,7 @@ main .category .cards .book-name {
     font-weight: 1000;
     overflow: hidden;
     height: 50px;
-    margin: 8px 8px;
+    margin: 8px 0px;
     text-transform: capitalize;
 }
 
@@ -255,24 +316,52 @@ main .category .cards .author {
     font-style:italic;
     width: 212.667px;
     height: 20px;
-    margin: 8px 8px;
+    margin: 8px 0px;
     overflow: hidden;
 }
 
 main .category .book-price {
     font-size: 35px;
     font-weight: 900;
-    margin: 9px 8px;
+    margin: 9px 0px;
     text-align: center;
 }
 
+
+main .catepage-hero{
+    display: flex;
+    position: relative;
+    width: 100%;
+    height:auto;
+    justify-content: center;
+    align-items: center;
+}
+main .catepage-hero img{
+    max-width: 100%;
+    filter: blur(1px);
+    opacity: 50%;
+}
 main .sub-cate-title {
-    text-align: center;
-    margin: 144px;
-    font-size: 56.83px;
+    font-size: 88px;
+    letter-spacing: 12px;
     text-transform: uppercase;
-    letter-spacing: 10px;
     font-weight: bolder;
+    font-family: "Poppins", sans-serif;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-text-stroke: 1px var(--sage-black);
+    color: transparent;
+    background-image: linear-gradient(to bottom, rgba(20, 24, 16, 1), rgba(20, 24, 16, 1));
+    background-repeat: no-repeat;
+    -webkit-background-clip: text;
+    background-position: -1000px 0px;
+    animation: backcolor 5s linear forwards;
+}
+
+@keyframes backcolor {
+    100% {background-position: 0 0}
 }
 
 main .hor-line-container {
