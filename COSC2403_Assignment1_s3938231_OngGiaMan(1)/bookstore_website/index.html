@@ -27,32 +27,42 @@
             <div class="logo">
                 <a href=""><img src="Assets/logo1.png" alt=""></a>
             </div>
-        <ul class="nav1-category">
-            <li><a href="">Home</a></li>
-            <li><a href="">Children</a></li>
-            <li><a href="">Non-fiction</a></li>
-            <li><a href="">Fiction</a></li>
-            <li><a href="">Textbook</a></li>
-            <li><a href="">Reference</a></li>
-        </ul>
-        <ul class="user-tools">
-            <li><i class="fa-solid fa-magnifying-glass"></i></li>
-            <li><i class="fa-solid fa-bag-shopping"></i></li>
-        </ul>
+            <div class="res-menu">
+                <input type="checkbox" id="toggle">
+                <label class="nav-toggler" for="toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </label>
+            <ul class="nav1-category">
+                <li class="nav-item"><a href="">Home</a></li>
+                <li class="nav-item"><a href="">Children</a></li>
+                <li class="nav-item"><a href="">Non-fiction</a></li>
+                <li class="nav-item"><a href="">Fiction</a></li>
+                <li class="nav-item"><a href="">Textbook</a></li>
+                <li class="nav-item"><a href="">Reference</a></li>
+            </ul>
+            </div>
+            <ul class="user-tools">
+                <li><i class="fa-solid fa-magnifying-glass"></i></li>
+                <li><i class="fa-solid fa-bag-shopping"></i></li>
+            </ul>
         </nav>
 
         <!--Hero Area-->
         <div class="hero-area">
             <div class="container">
-                <div class="cta-1">
-                    <p>Lorem ipsum dolor sit.</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, illum.</p>
-                    <a href="">
-                        <button>Go to Other Page</button>
-                    </a>
+                <div class="cta-1-container">
+                    <div class="cta-1">
+                        <h1>Looking for your next great read?</h1>
+                        <p>Look no further than our bookstore! Browse our selection of new and classic titles, and discover your next favorite book today.</p>
+                        <a href="">
+                            <button>Start Browsing!</button>
+                        </a>
+                    </div>
                 </div>
                 <div class="illustration">
-
+                    <img src="Assets/hero-img.png">
                 </div>
             </div>
         </div>
@@ -65,7 +75,9 @@
             <div class="container">
                 <div class="line"></div>
                 <blockquote>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione consequuntur illum delectus perspiciatis. Ut omnis dolorum labore rerum, quos officiis?</p>
+                    <p>“Maybe this is why we read, and why in moments of darkness we return to books: to find words for what we already know.”
+                    </p>
+                    <p class="quote-author">―Alberto Manguel</p>
                 </blockquote>
                 <div class="line"></div>
             </div>
@@ -76,7 +88,7 @@
 
             <!--Children Category-->
             <section class="cate-container">
-                <h1 class="cate-name"><a>Children</a></h1>
+                <h2 class="cate-name"><a>Children</a></h2>
                 <div class="hor-line-container"><div class="hor-line"></div></div>
                 <div class="product">
                     <button class="slide-arrow"><img src="Assets/arrow-left.png"></button>
@@ -86,7 +98,7 @@
                         </div>
                         <div class="intro">
                             <a>
-                                <h2 class="book-name">Where The Wild Things Are</h2>
+                                <h3 class="book-name">Where The Wild Things Are</h3>
                                 <p class="author">Maurice Sendak</p>
                                 <p class="book-price">210.000</p>
                             </a>
@@ -98,7 +110,7 @@
                         </div>
                         <div class="intro">
                             <a>
-                                <h2 class="book-name">Green Eggs and Ham</h2>
+                                <h3 class="book-name">Green Eggs and Ham</h3>
                                 <p class="author">Dr. Seuss</p>
                                 <p class="book-price">180.000</p>
                             </a>
@@ -110,7 +122,7 @@
                         </div>
                         <div class="intro">
                             <a>
-                                <h2 class="book-name">Harry Potter</h2>
+                                <h3 class="book-name">Harry Potter</h3>
                                 <p class="author">J.K. Rowling</p>
                                 <p class="book-price">120.000</p>
                             </a>
@@ -122,7 +134,7 @@
                         </div>
                         <div class="intro">
                             <a>
-                                <h2 class="book-name">The Percy Jackson and the Olympians</h2>
+                                <h3 class="book-name">The Percy Jackson and the Olympians</h3>
                                 <p class="author">Maurice Sendak</p>
                                 <p class="book-price">210.000</p>
                             </a>
@@ -135,7 +147,7 @@
 
             <!--Fiction Category-->
             <section class="cate-container">
-                <h1 class="cate-name"><a href="">Fiction</a></h1>
+                <h2 class="cate-name"><a href="">Fiction</a></h2>
                 <div class="hor-line-container"><div class="hor-line"></div></div>
                 <div class="product">
                     <button class="slide-arrow"><img src="Assets/arrow-left.png"></button>
@@ -145,7 +157,7 @@
                         </div>
                         <div class="intro">
                             <a>
-                                <h2 class="book-name">The Great Gatsby</h2>
+                                <h3 class="book-name">The Great Gatsby</h3>
                                 <p class="author">F. Scott Fitzgerald</p>
                                 <p class="book-price">230.000</p>
                             </a>
@@ -157,7 +169,7 @@
                         </div>
                         <div class="intro">
                             <a>
-                                <h2 class="book-name">The Notebook</h2>
+                                <h3 class="book-name">The Notebook</h3>
                                 <p class="author">Nicholas Sparks</p>
                                 <p class="book-price">260.000</p>
                             </a>
@@ -169,7 +181,7 @@
                         </div>
                         <div class="intro">
                             <a>
-                                <h2 class="book-name">Dune</h2>
+                                <h3 class="book-name">Dune</h3>
                                 <p class="author">Frank Herbert</p>
                                 <p class="book-price">150.000</p>
                             </a>
@@ -181,7 +193,7 @@
                         </div>
                         <div class="intro">
                             <a>
-                                <h2 class="book-name">The Lored of the Rings</h2>
+                                <h3 class="book-name">The Lored of the Rings</h3>
                                 <p class="author">J.R.R. Tolkien</p>
                                 <p class="book-price">220.000</p>
                             </a>
@@ -193,7 +205,7 @@
 
             <!--Non-fiction Category-->
             <section class="cate-container">
-                <h1 class="cate-name"><a href="">Non-Fiction</a></h1>
+                <h2 class="cate-name"><a href="">Non-Fiction</a></h2>
                 <div class="hor-line-container"><div class="hor-line"></div></div>
                 <div class="product">
                     <button class="slide-arrow"><img src="Assets/arrow-left.png"></button>
@@ -203,7 +215,7 @@
                         </div>
                         <div class="intro">
                             <a>
-                                <h2 class="book-name">The Autobiography of Malcolm X</h2>
+                                <h3 class="book-name">The Autobiography of Malcolm X</h3>
                                 <p class="author">Malcolm X and Alex Haley</p>
                                 <p class="book-price">100.000</p>
                             </a>
@@ -215,7 +227,7 @@
                         </div>
                         <div class="intro">
                             <a>
-                                <h2 class="book-name">The 7 Habits of Highly Effective People</h2>
+                                <h3 class="book-name">The 7 Habits of Highly Effective People</h3>
                                 <p class="author">Stephen Covey</p>
                                 <p class="book-price">280.000</p>
                             </a>
@@ -227,7 +239,7 @@
                         </div>
                         <div class="intro">
                             <a>
-                                <h2 class="book-name">The Guns of August</h2>
+                                <h3 class="book-name">The Guns of August</h3>
                                 <p class="author">Barbara Tuchman</p>
                                 <p class="book-price">270.000</p>
                             </a>
@@ -239,7 +251,7 @@
                         </div>
                         <div class="intro">
                             <a>
-                                <h2 class="book-name">The Selfish Gene</h2>
+                                <h3 class="book-name">The Selfish Gene</h3>
                                 <p class="author">Richard Dawkins</p>
                                 <p class="book-price">210.000</p>
                             </a>
@@ -251,7 +263,7 @@
 
             <!--Textbook Category-->
             <section class="cate-container">
-                <h1 class="cate-name"><a>Textbook</a></h1>
+                <h2 class="cate-name"><a>Textbook</a></h2>
                 <div class="hor-line-container"><div class="hor-line"></div></div>
                 <div class="product">
                     <button class="slide-arrow"><img src="Assets/arrow-left.png"></button>
@@ -261,7 +273,7 @@
                         </div>
                         <div class="intro">
                             <a>
-                                <h2 class="book-name">Calculus: Early Transcendentals</h2>
+                                <h3 class="book-name">Calculus: Early Transcendentals</h3>
                                 <p class="author">James Stewart</p>
                                 <p class="book-price">300.000</p>
                             </a>
@@ -273,7 +285,7 @@
                         </div>
                         <div class="intro">
                             <a>
-                                <h2 class="book-name">Introduction to Sociology</h2>
+                                <h3 class="book-name">Introduction to Sociology</h3>
                                 <p class="author">Anthony Giddens, Mitchell Duneier, Richard P. Appelbaum, and Deborah Carr</p>
                                 <p class="book-price">460.000</p>
                             </a>
@@ -285,7 +297,7 @@
                         </div>
                         <div class="intro">
                             <a>
-                                <h2 class="book-name">The Norton Anthology of World Literature</h2>
+                                <h3 class="book-name">The Norton Anthology of World Literature</h3>
                                 <p class="author">Martin Puchner</p>
                                 <p class="book-price">210.000</p>
                             </a>
@@ -297,7 +309,7 @@
                         </div>
                         <div class="intro">
                             <a>
-                                <h2 class="book-name">Computer Organization and Design: The Hardware/Software Interface</h2>
+                                <h3 class="book-name">Computer Organization and Design: The Hardware/Software Interface</h3>
                                 <p class="author">David A. Patterson and John L. Hennessy</p>
                                 <p class="book-price">290.000</p>
                             </a>
@@ -309,7 +321,7 @@
 
             <!--Reference -->
             <section class="cate-container">
-                <h1 class="cate-name"><a>Reference</a></h1>
+                <h2 class="cate-name"><a>Reference</a></h2>
                 <div class="hor-line-container"><div class="hor-line"></div></div>
                 <div class="product">
                     <button class="slide-arrow"><img src="Assets/arrow-left.png"></button>
@@ -319,7 +331,7 @@
                         </div>
                         <div class="intro">
                             <a>
-                                <h2 class="book-name">Where The Wild Things Are</h2>
+                                <h3 class="book-name">Where The Wild Things Are</h3>
                                 <p class="author">Maurice Sendak</p>
                                 <p class="book-price">210.000</p>
                             </a>
@@ -331,7 +343,7 @@
                         </div>
                         <div class="intro">
                             <a>
-                                <h2 class="book-name">Where The Wild Things Are</h2>
+                                <h3 class="book-name">Where The Wild Things Are</h3>
                                 <p class="author">Maurice Sendak</p>
                                 <p class="book-price">210.000</p>
                             </a>
@@ -343,7 +355,7 @@
                         </div>
                         <div class="intro">
                             <a>
-                                <h2 class="book-name">Where The Wild Things Are</h2>
+                                <h3 class="book-name">Where The Wild Things Are</h3>
                                 <p class="author">Maurice Sendak</p>
                                 <p class="book-price">210.000</p>
                             </a>
@@ -355,7 +367,7 @@
                         </div>
                         <div class="intro">
                             <a>
-                                <h2 class="book-name">Where The Wild Things Are</h2>
+                                <h3 class="book-name">Where The Wild Things Are</h3>
                                 <p class="author">Maurice Sendak</p>
                                 <p class="book-price">210.000</p>
                             </a>
@@ -366,8 +378,14 @@
             </section>
         </section>
 
-        <div class="video-&-cta">
-            
+        <div class="video-container">
+            <video max-width="320" height="240" controls>
+                <source src="Assets/bookstore-vid.mp4" type="video/mp4">
+            </video>
+            <div class="cta2">
+                <p>Excited Already?</p>
+                <button class="cta2-btn">Start Shopping</button>
+            </div>
         </div>
     </main>
 
@@ -380,7 +398,7 @@
                 <p><a href="mailto:s3938231@rmit.edu.vn"></a>s3938231@rmit.edu.vn</p>
             </div>
             <div class="category-nav">
-                <h3><a href="">Category</a></h3>
+                <h4><a href="">Category</a></h4>
                 <ul>
                 <li><a href="#">Children</a></li>
                 <li><a href="#">Non-Fiction</a></li>
@@ -390,7 +408,7 @@
                 </ul>
             </div>
             <div class="links-nav">
-                <h3><a href="">Links</a></h3>
+                <h4><a href="">Links</a></h4>
                 <ul>
                 <li><a href="#">About Us</a></li>
                 <li><a href="#">Privacy Policy</a></li>
@@ -400,7 +418,7 @@
                 </ul>
             </div>
             <div class="social-nav">
-                <h3><a href="">Social Media</a></h3>
+                <h4><a href="">Social Media</a></h4>
                 <ul>
                 <li><a href="#"><i class="fab fa-facebook"></i></a></li>
                 <li><a href="#"><i class="fab fa-twitter"></i></a></li>

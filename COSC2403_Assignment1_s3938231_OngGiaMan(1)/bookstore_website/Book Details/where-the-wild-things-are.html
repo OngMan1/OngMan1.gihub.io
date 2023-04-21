@@ -14,7 +14,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ehere The Wild Things Are</title>
+    <title>Where The Wild Things Are</title>
     <link rel="shortcut icon" type="image/x-icon" href="Assets/logo.jpg">
     <link rel="stylesheet" type="text/css" href="../style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -30,20 +30,28 @@
         <nav class="nav-bar-1">
             <div class="logo">
                 <a href=""><img src="../Assets/logo1.png" alt=""></a>
+            </div >
+            <div class="res-menu">
+                <input type="checkbox" id="toggle">
+                <label class="nav-toggler" for="toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+                </label>
+                <ul class="nav1-category">
+                    <li class="nav-item"><a href="">Home</a></li>
+                    <li class="nav-item"><a href="">Children</a></li>
+                    <li class="nav-item"><a href="">Non-fiction</a></li>
+                    <li class="nav-item"><a href="">Fiction</a></li>
+                    <li class="nav-item"><a href="">Textbook</a></li>
+                    <li class="nav-item"><a href="">Reference</a></li>
+                </ul>
             </div>
-        <ul class="nav1-category">
-            <li><a href="">Home</a></li>
-            <li><a href="">Children</a></li>
-            <li><a href="">Non-fiction</a></li>
-            <li><a href="">Fiction</a></li>
-            <li><a href="">Textbook</a></li>
-            <li><a href="">Reference</a></li>
-        </ul>
-        <ul class="user-tools">
-            <li><i class="fa-solid fa-magnifying-glass"></i></li>
-            <li><i class="fa-solid fa-bag-shopping"></i></li>
-        </ul>
-    </nav>
+            <ul class="user-tools">
+                <li><i class="fa-solid fa-magnifying-glass"></i></li>
+                <li><i class="fa-solid fa-bag-shopping"></i></li>
+            </ul>
+        </nav>
     </header>
 
     <main>
@@ -57,13 +65,13 @@
             <div class="product-img-and-buy">
                 <div class="img-container">
                     <div class="larg-img">
-                        <img src="../Assets/where-the-wild-things-are.jpg">
+                        <img src="../Assets/where-the-wild-things-are.jpg" id="fullBox">
                     </div>
                     <div class="sml-img">
-                        <img src="../Assets/where-the-wild-things-are.jpg">
-                        <img src="../Assets/page1.jpg">
-                        <img src="../Assets/page2.jpg">
-                        <img src="../Assets/page3.jpg">
+                        <img src="../Assets/where-the-wild-things-are.jpg" onclick="myFunction(this)">
+                        <img src="../Assets/page1.jpg" onclick="myFunction(this)">
+                        <img src="../Assets/page2.jpg" onclick="myFunction(this)">
+                        <img src="../Assets/page3.jpg" onclick="myFunction(this)">
                     </div>
                 </div>
             </div>
@@ -77,17 +85,56 @@
         <div class="tab-container">
             <div class="tabs">
                 <input type="radio" class="tabs-radio" name="more-product-info" id="description" checked>
-                <label for="description" class="tabs-label">Tab #1</label>
+                <label for="description" class="tabs-label">DESCRIPTION</label>
                 <div class="tabs-content">
-                  CONTENT for Tab #1
+                  <p>
+                    "Where the Wild Things Are" is a children's picture book 
+                    written and illustrated by Maurice Sendak. It tells the 
+                    story of a young boy named Max, who after being sent to 
+                    bed without supper, imagines a magical world inhabited 
+                    by wild creatures. Max becomes their king and leads them 
+                    in a wild rumpus, but eventually realizes he wants to return 
+                    home to his own room and family. The book explores themes of 
+                    imagination, freedom, and the power of unconditional love. 
+                    It has become a beloved classic since its publication in 1963, 
+                    and has been adapted into a successful film and stage production.
+                  </p>
                 </div>
                 <input type="radio" class="tabs-radio" name="more-product-info" id="tab2">
-                <label for="tab2" class="tabs-label">Tab #2</label>
+                <label for="tab2" class="tabs-label">DETAILS</label>
                 <div class="tabs-content">
-                  CONTENT for Tab #2
+                  <table>
+                    <tr>
+                        <td>Product Type:</td>
+                        <td>Softcover</td>
+                    </tr>
+                    <tr>
+                        <td>Dimensions:</td>
+                        <td>13 x 20.5 cm</td>
+                    </tr>
+                    <tr>
+                        <td>Number Of Page:</td>
+                        <td>320</td>
+                    </tr>
+                    <tr>
+                        <td>Author:</td>
+                        <td>Maurice Sendak</td>
+                    </tr>
+                    <tr>
+                        <td>Publisher:</td>
+                        <td>Harper & Row</td>
+                    </tr>
+                  </table>
                 </div>
               </div>
         </div>
+
+        <script>
+            let myFunction = (smlImg) => {
+                var fullImg = document.getElementById("fullBox");
+                fullImg.src = smlImg.src;
+            };
+        </script>
     </main>
 
 <!--Footer section-->
