@@ -15,15 +15,7 @@
 }
 
 :root{
-    --forest-green: #94B49F;
-    --light-sage: #C1D5A4;
-    --pale-yellow-green: #F0F2B6;
-    --yellowish-white: #FCF8E8;
-    --rose-light-pink: #DF7861;
     --sage-black: #293121;
-    --rosy-brown: #A7796F;
-    --tan: #E2AA84;
-
     --color-1: #FEF5ED;
     --color-2: #D3E4CD;
     --color-3: #ADC2A9;
@@ -436,6 +428,7 @@ header .hero-area .cta-1 {
   color: var(--sage-black);
   padding: 16px;
   border: solid var(--sage-black) 3px;
+  font-weight: 700;
 }
 
 .hero-area .cta-1 > .cta1-btn a:hover, .cta2  .cta2-btn a:hover {
@@ -624,7 +617,7 @@ blockquote {
 
 .category .cards .book-name {
     font-weight: 1000;
-    height: 20px;
+    height: 23.2px;
     overflow: hidden;
     margin: 8px 0px;
     text-transform: capitalize;
@@ -638,10 +631,7 @@ blockquote {
     height: 24,5px;
     font-size: 18px;
     font-style:italic;
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    height: 20px;
+    /* height: 20px; */
     margin: 8px 0px;
     overflow: hidden;
     white-space: nowrap;
@@ -672,7 +662,7 @@ blockquote {
   }
   
 .sub-cate-title {
-    font-size: 8vw; /* use viewport width unit */
+    font-size: 6vw; /* use viewport width unit */
     letter-spacing: 0.5em;
     text-transform: uppercase;
     font-weight: bolder;
@@ -686,7 +676,7 @@ blockquote {
   }
   
 
-@media (max-width: 1390px) {
+@media (max-width: 190px) {
   .category .slide-arrow {
     display: none;
   }
@@ -898,6 +888,11 @@ blockquote {
 
   .img-container .larg-img {
     width: 100%;
+  }
+}
+@media (max-width:464px) {
+  .img-container .sml-img {
+    gap: 0.5px;
   }
 }
 
